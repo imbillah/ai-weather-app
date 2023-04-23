@@ -1,5 +1,5 @@
 "use client";
-
+import SelectCity from "@/components/SelectCity";
 import { Card, Subtitle, Text, Divider } from "@tremor/react";
 export default function Home() {
   return (
@@ -12,7 +12,10 @@ export default function Home() {
           Get AI optimized weather report based on your country and city.
         </Subtitle>
         <Divider className="my-10" />
-        <Card className="bg-sky-400">{/* select city */}</Card>
+        <Card className="bg-sky-400">
+          {/* select city */}
+          <SelectCity />
+        </Card>
       </Card>
     </main>
   );
